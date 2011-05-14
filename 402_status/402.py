@@ -2,4 +2,4 @@
 
 print 'Status: 402 Payment Required'
 print "Content-Type: text/html\n"
-print '<h1>GOT MONEY?</h1>'
+print '<h1>GOT MONEY FOR GUIDO?</h1>'
