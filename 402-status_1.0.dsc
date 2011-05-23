@@ -8,8 +8,8 @@ Homepage: <insert the upstream URL, if relevant>
 Standards-Version: 3.8.3
 Build-Depends: debhelper (>= 7)
 Checksums-Sha1: 
- 4a03a74877b3d41858c92a72a5a4dc5eccbbbc0a 14002 402-status_1.0.tar.gz
+ a679f0c68a0d1d2941b4690929c60cd2d350ffe9 2649 402-status_1.0.tar.gz
 Checksums-Sha256: 
- aff8facf3ded9864e954d725a87bf8efd620e151d336e36587b1dfc769c012c0 14002 402-status_1.0.tar.gz
+ e1fd72b037ad4a8a90d65901cae779947b73b626298ebcacd40b4e2a53616a89 2649 402-status_1.0.tar.gz
 Files: 
- 56f83aa3f39231d213cde0254d8e7b35 14002 402-status_1.0.tar.gz
+ 77e81b53ec29f681a1dd4f8b1fce6839 2649 402-status_1.0.tar.gz

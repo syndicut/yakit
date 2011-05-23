@@ -1,20 +1,10 @@
 This work was packaged for Debian by:
 
-    syndicut <syndicut@install-server.local> on Mon, 23 May 2011 15:14:23 +0400
+    syndicut <syndicut@yandex-team.ru> on Mon, 23 May 2011 15:14:23 +0400
 
 It was downloaded from:
 
-    <url://example.com>
-
-Upstream Author(s):
-
-    <put author's name and email here>
-    <likewise for another author>
-
-Copyright:
-
-    <Copyright (C) YYYY Firstname Lastname>
-    <likewise for another author>
+    http://github.com/syndicut/yakit/402_status
 
 License:
 
@@ -36,7 +26,7 @@ Public License version 3 can be found in `/usr/share/common-licenses/GPL-3'.
 
 The Debian packaging is:
 
-    Copyright (C) 2011 syndicut <syndicut@install-server.local>
+    Copyright (C) 2011 syndicut <syndicut@yandex-team.ru>
 
 # Please chose a license for your packaging work. If the program you package
 # uses a mainstream license, using the same license is the safest choice.

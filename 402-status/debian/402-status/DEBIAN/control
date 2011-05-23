@@ -2,7 +2,7 @@ Package: 402-status
 Version: 1.0
 Architecture: i386
 Maintainer: syndicut <syndicut@yandex-team.ru>
-Installed-Size: 84
+Installed-Size: 80
 Pre-Depends: lighttpd
 Depends: python, bash, perl
 Section: unknown

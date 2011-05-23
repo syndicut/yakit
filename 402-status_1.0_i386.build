@@ -6,7 +6,7 @@ dpkg-buildpackage: set FFLAGS to default value: -g -O2
 dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
 dpkg-buildpackage: source package 402-status
 dpkg-buildpackage: source version 1.0
-dpkg-buildpackage: source changed by syndicut <syndicut@install-server.local>
+dpkg-buildpackage: source changed by syndicut <syndicut@yandex-team.ru>
 dpkg-buildpackage: host architecture i386
  fakeroot debian/rules clean
 dh  clean
@@ -79,7 +79,6 @@ make[1]: Leaving directory `/home/syndicut/yakit/402-status'
    dh_shlibdeps
    dh_installdeb
    dh_gencontrol
-dpkg-gencontrol: warning: unknown substitution variable ${shlibs:Depends}
 dpkg-gencontrol: warning: unused substitution variable ${perl:Depends}
 dpkg-gencontrol: warning: unused substitution variable ${python:Depends}
    dh_md5sums
@@ -89,35 +88,13 @@ dpkg-deb: building package `402-status' in `../402-status_1.0_i386.deb'.
 dpkg-genchanges: including full source code in upload
 dpkg-buildpackage: full upload; Debian-native package (full source is included)
 Now running lintian...
-W: 402-status source: dh-make-template-in-source debian/manpage.xml.ex
-W: 402-status source: dh-make-template-in-source debian/402-status.default.ex
-W: 402-status source: dh-make-template-in-source debian/prerm.ex
-W: 402-status source: dh-make-template-in-source debian/emacsen-install.ex
-W: 402-status source: dh-make-template-in-source debian/cron.d.ex
-W: 402-status source: dh-make-template-in-source debian/emacsen-remove.ex
-W: 402-status source: dh-make-template-in-source debian/init.d.lsb.ex
-W: 402-status source: dh-make-template-in-source debian/watch.ex
-W: 402-status source: dh-make-template-in-source debian/postrm.ex
-W: 402-status source: dh-make-template-in-source debian/manpage.1.ex
-W: 402-status source: dh-make-template-in-source debian/init.d.ex
-W: 402-status source: dh-make-template-in-source debian/402-status.doc-base.EX
 W: 402-status source: debhelper-overrides-need-versioned-build-depends (>= 7.0.50~)
-W: 402-status source: dh-make-template-in-source debian/manpage.sgml.ex
-W: 402-status source: dh-make-template-in-source debian/emacsen-startup.ex
-W: 402-status source: dh-make-template-in-source debian/preinst.ex
-W: 402-status source: dh-make-template-in-source debian/menu.ex
-W: 402-status source: dh-make-template-in-source debian/postinst.ex
 W: 402-status source: missing-debian-source-format
 W: 402-status source: maintainer-not-full-name syndicut
 W: 402-status source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
 W: 402-status source: bad-homepage <insert the upstream URL, if relevant>
-W: 402-status source: changelog-should-mention-nmu
-W: 402-status source: source-nmu-has-incorrect-version-number 1.0
 W: 402-status source: out-of-date-standards-version 3.8.3 (current is 3.8.4)
-E: 402-status: helper-templates-in-copyright
-W: 402-status: copyright-has-url-from-dh_make-boilerplate
 E: 402-status: copyright-contains-dh_make-todo-boilerplate
-W: 402-status: readme-debian-contains-debmake-template
 W: 402-status: extended-description-line-too-long
 W: 402-status: maintainer-not-full-name syndicut
 E: 402-status: section-is-dh_make-template
