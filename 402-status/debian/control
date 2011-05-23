@@ -9,6 +9,6 @@ Homepage: <insert the upstream URL, if relevant>
 Package: 402-status
 Architecture: any
 Pre-Depends: lighttpd
-Depends: ${shlibs:Depends}, ${misc:Depends}, python, bash, perl
+Depends: ${misc:Depends}, python, bash, perl
 Description: Scripts to return 402 status via cgi
  Scripts for #yakit practice to return 402 status code via cgi written in Perl, Bash and Python
