@@ -7,7 +7,7 @@ Standards-Version: 3.8.3
 Homepage: <insert the upstream URL, if relevant>
 
 Package: 402-status
-Architecture: any
+Architecture: all
 Pre-Depends: lighttpd
 Depends: ${misc:Depends}, python, bash, perl
 Description: Scripts to return 402 status via cgi
