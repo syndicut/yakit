@@ -1,6 +1,6 @@
 Package: 402-status
 Version: 1.0
-Architecture: i386
+Architecture: all
 Maintainer: syndicut <syndicut@yandex-team.ru>
 Installed-Size: 80
 Pre-Depends: lighttpd
