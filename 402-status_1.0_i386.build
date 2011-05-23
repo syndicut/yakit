@@ -1,0 +1,133 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: set CFLAGS to default value: -g -O2
+dpkg-buildpackage: set CPPFLAGS to default value: 
+dpkg-buildpackage: set LDFLAGS to default value: -Wl,-Bsymbolic-functions
+dpkg-buildpackage: set FFLAGS to default value: -g -O2
+dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+dpkg-buildpackage: source package 402-status
+dpkg-buildpackage: source version 1.0
+dpkg-buildpackage: source changed by syndicut <syndicut@install-server.local>
+dpkg-buildpackage: host architecture i386
+ fakeroot debian/rules clean
+dh  clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b 402-status
+dpkg-source: warning: source directory '402-status' is not <sourcepackage>-<upstreamversion> '402-status-1.0'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building 402-status in 402-status_1.0.tar.gz
+dpkg-source: info: building 402-status in 402-status_1.0.dsc
+ debian/rules build
+dh  build
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+make[1]: Entering directory `/home/syndicut/yakit/402-status'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/syndicut/yakit/402-status'
+   dh_auto_test
+ fakeroot debian/rules binary
+dh  binary
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   dh_auto_install
+make[1]: Entering directory `/home/syndicut/yakit/402-status'
+mkdir -p /home/syndicut/yakit/402-status/debian/402-status/var/www/402-status
+cp -a 402.pl 402.py 402.sh /home/syndicut/yakit/402-status/debian/402-status/var/www/402-status
+make[1]: Leaving directory `/home/syndicut/yakit/402-status'
+   debian/rules override_dh_install
+make[1]: Entering directory `/home/syndicut/yakit/402-status'
+dh_install
+mkdir -p debian/402-status/etc/lighttpd/conf-available
+cp lighttpd/cgi.conf debian/402-status/etc/lighttpd/conf-available/99-402-status.conf	
+make[1]: Leaving directory `/home/syndicut/yakit/402-status'
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_installman
+   dh_installcatalogs
+   dh_installcron
+   dh_installdebconf
+   dh_installemacsen
+   dh_installifupdown
+   dh_installinfo
+   dh_pysupport
+   dh_installinit
+   dh_installmenu
+   dh_installmime
+   dh_installmodules
+   dh_installlogcheck
+   dh_installlogrotate
+   dh_installpam
+   dh_installppp
+   dh_installudev
+   dh_installwm
+   dh_installxfonts
+   dh_bugfiles
+   dh_lintian
+   dh_gconf
+   dh_icons
+   dh_perl
+   dh_usrlocal
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_strip
+   dh_makeshlibs
+   dh_shlibdeps
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: unknown substitution variable ${shlibs:Depends}
+dpkg-gencontrol: warning: unused substitution variable ${perl:Depends}
+dpkg-gencontrol: warning: unused substitution variable ${python:Depends}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `402-status' in `../402-status_1.0_i386.deb'.
+ dpkg-genchanges  >../402-status_1.0_i386.changes
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+W: 402-status source: dh-make-template-in-source debian/manpage.xml.ex
+W: 402-status source: dh-make-template-in-source debian/402-status.default.ex
+W: 402-status source: dh-make-template-in-source debian/prerm.ex
+W: 402-status source: dh-make-template-in-source debian/emacsen-install.ex
+W: 402-status source: dh-make-template-in-source debian/cron.d.ex
+W: 402-status source: dh-make-template-in-source debian/emacsen-remove.ex
+W: 402-status source: dh-make-template-in-source debian/init.d.lsb.ex
+W: 402-status source: dh-make-template-in-source debian/watch.ex
+W: 402-status source: dh-make-template-in-source debian/postrm.ex
+W: 402-status source: dh-make-template-in-source debian/manpage.1.ex
+W: 402-status source: dh-make-template-in-source debian/init.d.ex
+W: 402-status source: dh-make-template-in-source debian/402-status.doc-base.EX
+W: 402-status source: debhelper-overrides-need-versioned-build-depends (>= 7.0.50~)
+W: 402-status source: dh-make-template-in-source debian/manpage.sgml.ex
+W: 402-status source: dh-make-template-in-source debian/emacsen-startup.ex
+W: 402-status source: dh-make-template-in-source debian/preinst.ex
+W: 402-status source: dh-make-template-in-source debian/menu.ex
+W: 402-status source: dh-make-template-in-source debian/postinst.ex
+W: 402-status source: missing-debian-source-format
+W: 402-status source: maintainer-not-full-name syndicut
+W: 402-status source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: 402-status source: bad-homepage <insert the upstream URL, if relevant>
+W: 402-status source: changelog-should-mention-nmu
+W: 402-status source: source-nmu-has-incorrect-version-number 1.0
+W: 402-status source: out-of-date-standards-version 3.8.3 (current is 3.8.4)
+E: 402-status: helper-templates-in-copyright
+W: 402-status: copyright-has-url-from-dh_make-boilerplate
+E: 402-status: copyright-contains-dh_make-todo-boilerplate
+W: 402-status: readme-debian-contains-debmake-template
+W: 402-status: extended-description-line-too-long
+W: 402-status: maintainer-not-full-name syndicut
+E: 402-status: section-is-dh_make-template
+W: 402-status: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: 402-status: bad-homepage <insert the upstream URL, if relevant>
+E: 402-status: depends-on-essential-package-without-using-version depends: bash
+E: 402-status: dir-or-file-in-var-www var/www/402-status/
+E: 402-status: dir-or-file-in-var-www var/www/402-status/402.pl
+E: 402-status: dir-or-file-in-var-www var/www/402-status/402.py
+E: 402-status: dir-or-file-in-var-www var/www/402-status/402.sh
+Finished running lintian.
+Now signing changes and any dsc files...
+Could not find a signing program (pgp or gpg)!

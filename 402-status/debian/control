@@ -1,0 +1,14 @@
+Source: 402-status
+Section: unknown
+Priority: extra
+Maintainer: syndicut <syndicut@yandex-team.ru>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.8.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: 402-status
+Architecture: any
+Pre-Depends: lighttpd
+Depends: ${shlibs:Depends}, ${misc:Depends}, python, bash, perl
+Description: Scripts to return 402 status via cgi
+ Scripts for #yakit practice to return 402 status code via cgi written in Perl, Bash and Python

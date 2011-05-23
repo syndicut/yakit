@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 23 May 2011 15:14:23 +0400
+Source: 402-status
+Binary: 402-status
+Architecture: source i386
+Version: 1.0
+Distribution: unstable
+Urgency: low
+Maintainer: syndicut <syndicut@yandex-team.ru>
+Changed-By: syndicut <syndicut@install-server.local>
+Description: 
+ 402-status - Scripts to return 402 status via cgi
+Changes: 
+ 402-status (1.0) unstable; urgency=low
+ .
+   * Initial Release.
+Checksums-Sha1: 
+ f4bcc9f7bc6d4dad6dbd2f5c5611865ec8ee80b9 504 402-status_1.0.dsc
+ 4a03a74877b3d41858c92a72a5a4dc5eccbbbc0a 14002 402-status_1.0.tar.gz
+ 1e5d0686afc7a819f03906cc38f9178ef9a9f9af 3218 402-status_1.0_i386.deb
+Checksums-Sha256: 
+ c9b9218936c39eaa39ce1ad653ff4031f7baa18cbe39ceb4b14de8ac6b65b6bd 504 402-status_1.0.dsc
+ aff8facf3ded9864e954d725a87bf8efd620e151d336e36587b1dfc769c012c0 14002 402-status_1.0.tar.gz
+ a3d6a5e50f864efe394a3c23eb16e3587a9c52ffb8da876cae06336c144bcb53 3218 402-status_1.0_i386.deb
+Files: 
+ 66b01b7eb98bef6c80f5defb881cc492 504 unknown extra 402-status_1.0.dsc
+ 56f83aa3f39231d213cde0254d8e7b35 14002 unknown extra 402-status_1.0.tar.gz
+ c293f36d5f1d5bb4fd890ffb2c291248 3218 unknown extra 402-status_1.0_i386.deb
