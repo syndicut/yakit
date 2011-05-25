@@ -1,12 +1,11 @@
 Package: 402-status
 Version: 1.0
 Architecture: all
-Maintainer: syndicut <syndicut@yandex-team.ru>
+Maintainer: Rashit Azizbaev <syndicut@yandex-team.ru>
 Installed-Size: 80
 Pre-Depends: lighttpd
-Depends: python, bash, perl
 Section: unknown
 Priority: extra
-Homepage: <insert the upstream URL, if relevant>
+Homepage: https://github.com/syndicut/yakit/402_status
 Description: Scripts to return 402 status via cgi
  Scripts for #yakit practice to return 402 status code via cgi written in Perl, Bash and Python

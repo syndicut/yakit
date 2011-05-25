@@ -1,0 +1,5 @@
+402-status (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- syndicut <syndicut@install-server.local>  Wed, 25 May 2011 13:58:38 +0400
